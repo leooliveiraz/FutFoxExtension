@@ -1,0 +1,20 @@
+{
+
+          "manifest_version": 2,
+          "name": "FutFox",
+          "version": "0.01",
+
+          "description": "Roda comandos interessantes",
+
+          "icons": {
+                    "48": "icons/border-48.png"
+          },
+          "permissions": [
+             "http://*/*",
+             "https://*/*"
+           ],  
+          "content_scripts": [{
+                    "matches": ["*://*.github.com/*"],
+                    "js": ["code.js"]
+          }]
+}
